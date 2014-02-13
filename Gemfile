@@ -22,10 +22,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 
 group :development, :test do
-  gem 'spring'
+  gem 'spork'
   gem 'rspec-rails'
 
-  gem 'guard-spring'
+  gem 'guard-spork'
   gem 'guard-rspec'
 end
 
