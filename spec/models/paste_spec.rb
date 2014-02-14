@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Paste do
   before do
-    @paste = Paste.new(content: "Test")
+    @paste = FactoryGirl.create(:paste)
   end
 
   subject { @paste }
