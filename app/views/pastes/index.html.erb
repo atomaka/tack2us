@@ -1,1 +1,3 @@
-Hello, World!
+<% @pastes.each do |paste| %>
+  <%= link_to paste.id, paste %><br />
+<% end %>
