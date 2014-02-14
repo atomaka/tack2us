@@ -27,6 +27,8 @@ group :development, :test do
 
   gem 'guard-spork'
   gem 'guard-rspec'
+
+  gem 'rb-readline'
 end
 
 group :test do
