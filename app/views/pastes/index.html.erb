@@ -1,3 +1,4 @@
+<h2>Pastes</h2>
 <% @pastes.each do |paste| %>
-  <%= link_to paste.id, paste %><br />
+  <%= link_to paste.created_at, paste %><br />
 <% end %>
