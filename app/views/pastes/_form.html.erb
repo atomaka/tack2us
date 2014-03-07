@@ -1,7 +1,7 @@
 <%= form_for @paste do |f| %>
   <div class="form-group">
     <%= f.label :content %>
-    <%= f.text_area :content, class: 'form-control' %>
+    <%= f.text_area :content, class: 'form-control', rows: 15 %>
   </div>
   <%= f.submit 'Paste it!', class: 'btn btn-primary'  %>
 <% end %>
