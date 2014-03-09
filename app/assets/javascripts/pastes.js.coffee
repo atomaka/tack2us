@@ -2,5 +2,12 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on 'ready page:load', ->
-  $(".highlight pre code").each (i, e) ->
-      hljs.highlightBlock e
+  $(".code pre code").each (i, e) ->
+    hljs.highlightBlock e
+    numberLines e
+
+numberLines = (e) ->
+  $('.line-numbers').html([1..lineCount(e)].join("<br/>"))
+
+lineCount = (e) ->
+  $(e).html().split("\n").length - 1
